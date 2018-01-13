@@ -25,7 +25,8 @@ nav ul {
   display: none;
 }
 
- h1 h4 {
+ h1,
+ h4 {
   font-weight: bold;
 }
 
@@ -145,5 +146,48 @@ nav ul {
   }
   .product {
     width: 47%
+  }
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  /* CSS ruleset for mobile phone */
+  .banner {
+    height: 15rem;
+  }
+
+  .block {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+
+  .block h4 {
+  font-size: .77rem;
+  }
+
+  .block h1 {
+  font-size: 1rem;
+  }
+
+  .products,
+  .location {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+  .product.watch {
+    display: none;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  footer {
+    text-align: center;
   }
 }
